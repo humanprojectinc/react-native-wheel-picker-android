@@ -20,6 +20,10 @@ def _supportLibVersion = _ext.has("supportLibVersion") ? _ext.supportLibVersion 
 
 
 android {
+    def agpVersion = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION
+    if (agpVersion.tokenize('.')[0].toInteger() >= 7) {
+        namespace "com.delightfulstudio.wheelpicker"
+    }
     compileSdkVersion _compileSdkVersion
     buildToolsVersion _buildToolsVersion
 

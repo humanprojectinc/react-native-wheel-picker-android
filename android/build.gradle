@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
     implementation "com.android.support:appcompat-v7:${_supportLibVersion}"
     implementation "com.facebook.react:react-native:${_reactNativeVersion}"
-    implementation "cn.aigestudio.wheelpicker:WheelPicker:1.1.2"
 }

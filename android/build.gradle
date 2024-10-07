@@ -41,5 +41,5 @@ android {
 dependencies {
     implementation 'com.github.vladiBit:WheelPicker:1.1.7'
     implementation "com.android.support:appcompat-v7:${_supportLibVersion}"
-    implementation "com.facebook.react:react-native:${_reactNativeVersion}"
+    implementation "com.facebook.react:react-android:+"
 }
